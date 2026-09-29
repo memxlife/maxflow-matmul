@@ -1,0 +1,1469 @@
+{
+  "model": "synthetic-baseline-v1",
+  "config": {
+    "M": 256,
+    "N": 256,
+    "K": 256,
+    "s": 4,
+    "W": 32,
+    "T": 1024,
+    "S": 49152,
+    "R": 65536,
+    "r": 8,
+    "B_H": 100000000000,
+    "B_S": 1000000000000,
+    "B_R": 2000000000000,
+    "P": 100000000000,
+    "m_values": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "n_values": [
+      32,
+      64,
+      128
+    ],
+    "k_values": [
+      1,
+      8,
+      32,
+      128,
+      256
+    ]
+  },
+  "legal_count": 37,
+  "rejected_count": 38,
+  "winners": [
+    {
+      "m": 32,
+      "n": 32,
+      "k": 1,
+      "threads": 1024,
+      "shared_bytes": 256,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 69632,
+      "D_S": 1146880,
+      "D_R": 6430720,
+      "c_H": 1436121.3235294118,
+      "c_S": 871930.8035714285,
+      "c_R": 311007.16560509556,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 311007.16560509556,
+      "analytical_tiles_per_s": 311007.16560509556,
+      "output_elements_per_s": 318471337.57961786,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 32,
+      "k": 8,
+      "threads": 1024,
+      "shared_bytes": 2048,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 69632,
+      "D_S": 1146880,
+      "D_R": 6430720,
+      "c_H": 1436121.3235294118,
+      "c_S": 871930.8035714285,
+      "c_R": 311007.16560509556,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 311007.16560509556,
+      "analytical_tiles_per_s": 311007.16560509556,
+      "output_elements_per_s": 318471337.57961786,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 32,
+      "k": 32,
+      "threads": 1024,
+      "shared_bytes": 8192,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 69632,
+      "D_S": 1146880,
+      "D_R": 6430720,
+      "c_H": 1436121.3235294118,
+      "c_S": 871930.8035714285,
+      "c_R": 311007.16560509556,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 311007.16560509556,
+      "analytical_tiles_per_s": 311007.16560509556,
+      "output_elements_per_s": 318471337.57961786,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 32,
+      "k": 128,
+      "threads": 1024,
+      "shared_bytes": 32768,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 69632,
+      "D_S": 1146880,
+      "D_R": 6430720,
+      "c_H": 1436121.3235294118,
+      "c_S": 871930.8035714285,
+      "c_R": 311007.16560509556,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 311007.16560509556,
+      "analytical_tiles_per_s": 311007.16560509556,
+      "output_elements_per_s": 318471337.57961786,
+      "bottlenecks": [
+        "R"
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "m": 32,
+      "n": 32,
+      "k": 1,
+      "threads": 1024,
+      "shared_bytes": 256,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 69632,
+      "D_S": 1146880,
+      "D_R": 6430720,
+      "c_H": 1436121.3235294118,
+      "c_S": 871930.8035714285,
+      "c_R": 311007.16560509556,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 311007.16560509556,
+      "analytical_tiles_per_s": 311007.16560509556,
+      "output_elements_per_s": 318471337.57961786,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 32,
+      "k": 8,
+      "threads": 1024,
+      "shared_bytes": 2048,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 69632,
+      "D_S": 1146880,
+      "D_R": 6430720,
+      "c_H": 1436121.3235294118,
+      "c_S": 871930.8035714285,
+      "c_R": 311007.16560509556,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 311007.16560509556,
+      "analytical_tiles_per_s": 311007.16560509556,
+      "output_elements_per_s": 318471337.57961786,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 32,
+      "k": 32,
+      "threads": 1024,
+      "shared_bytes": 8192,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 69632,
+      "D_S": 1146880,
+      "D_R": 6430720,
+      "c_H": 1436121.3235294118,
+      "c_S": 871930.8035714285,
+      "c_R": 311007.16560509556,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 311007.16560509556,
+      "analytical_tiles_per_s": 311007.16560509556,
+      "output_elements_per_s": 318471337.57961786,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 32,
+      "k": 128,
+      "threads": 1024,
+      "shared_bytes": 32768,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 69632,
+      "D_S": 1146880,
+      "D_R": 6430720,
+      "c_H": 1436121.3235294118,
+      "c_S": 871930.8035714285,
+      "c_R": 311007.16560509556,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 311007.16560509556,
+      "analytical_tiles_per_s": 311007.16560509556,
+      "output_elements_per_s": 318471337.57961786,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 64,
+      "k": 1,
+      "threads": 1024,
+      "shared_bytes": 320,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 86016,
+      "D_S": 1163264,
+      "D_R": 6463488,
+      "c_H": 1162574.4047619049,
+      "c_S": 859650.088028169,
+      "c_R": 309430.44993662863,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 309430.44993662863,
+      "analytical_tiles_per_s": 309430.44993662863,
+      "output_elements_per_s": 316856780.7351077,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 64,
+      "k": 8,
+      "threads": 1024,
+      "shared_bytes": 2560,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 86016,
+      "D_S": 1163264,
+      "D_R": 6463488,
+      "c_H": 1162574.4047619049,
+      "c_S": 859650.088028169,
+      "c_R": 309430.44993662863,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 309430.44993662863,
+      "analytical_tiles_per_s": 309430.44993662863,
+      "output_elements_per_s": 316856780.7351077,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 64,
+      "k": 32,
+      "threads": 1024,
+      "shared_bytes": 10240,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 86016,
+      "D_S": 1163264,
+      "D_R": 6463488,
+      "c_H": 1162574.4047619049,
+      "c_S": 859650.088028169,
+      "c_R": 309430.44993662863,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 309430.44993662863,
+      "analytical_tiles_per_s": 309430.44993662863,
+      "output_elements_per_s": 316856780.7351077,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 64,
+      "k": 128,
+      "threads": 1024,
+      "shared_bytes": 40960,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 86016,
+      "D_S": 1163264,
+      "D_R": 6463488,
+      "c_H": 1162574.4047619049,
+      "c_S": 859650.088028169,
+      "c_R": 309430.44993662863,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 309430.44993662863,
+      "analytical_tiles_per_s": 309430.44993662863,
+      "output_elements_per_s": 316856780.7351077,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 32,
+      "k": 1,
+      "threads": 512,
+      "shared_bytes": 192,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 51200,
+      "D_S": 589824,
+      "D_R": 3248128,
+      "c_H": 1953125.0,
+      "c_S": 1695421.0069444445,
+      "c_R": 615739.2812105927,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 615739.2812105927,
+      "analytical_tiles_per_s": 615739.2812105927,
+      "output_elements_per_s": 315258511.97982347,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 32,
+      "k": 8,
+      "threads": 512,
+      "shared_bytes": 1536,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 51200,
+      "D_S": 589824,
+      "D_R": 3248128,
+      "c_H": 1953125.0,
+      "c_S": 1695421.0069444445,
+      "c_R": 615739.2812105927,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 615739.2812105927,
+      "analytical_tiles_per_s": 615739.2812105927,
+      "output_elements_per_s": 315258511.97982347,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 32,
+      "k": 32,
+      "threads": 512,
+      "shared_bytes": 6144,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 51200,
+      "D_S": 589824,
+      "D_R": 3248128,
+      "c_H": 1953125.0,
+      "c_S": 1695421.0069444445,
+      "c_R": 615739.2812105927,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 615739.2812105927,
+      "analytical_tiles_per_s": 615739.2812105927,
+      "output_elements_per_s": 315258511.97982347,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 32,
+      "k": 128,
+      "threads": 512,
+      "shared_bytes": 24576,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 51200,
+      "D_S": 589824,
+      "D_R": 3248128,
+      "c_H": 1953125.0,
+      "c_S": 1695421.0069444445,
+      "c_R": 615739.2812105927,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 615739.2812105927,
+      "analytical_tiles_per_s": 615739.2812105927,
+      "output_elements_per_s": 315258511.97982347,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 32,
+      "k": 256,
+      "threads": 512,
+      "shared_bytes": 49152,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 51200,
+      "D_S": 589824,
+      "D_R": 3248128,
+      "c_H": 1953125.0,
+      "c_S": 1695421.0069444445,
+      "c_R": 615739.2812105927,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 615739.2812105927,
+      "analytical_tiles_per_s": 615739.2812105927,
+      "output_elements_per_s": 315258511.97982347,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 128,
+      "k": 1,
+      "threads": 1024,
+      "shared_bytes": 544,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 143360,
+      "D_S": 1220608,
+      "D_R": 6578176,
+      "c_H": 697544.6428571428,
+      "c_S": 819263.8422818792,
+      "c_R": 304035.6475716065,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 304035.6475716065,
+      "analytical_tiles_per_s": 304035.6475716065,
+      "output_elements_per_s": 311332503.11332506,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 128,
+      "k": 8,
+      "threads": 1024,
+      "shared_bytes": 4352,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 143360,
+      "D_S": 1220608,
+      "D_R": 6578176,
+      "c_H": 697544.6428571428,
+      "c_S": 819263.8422818792,
+      "c_R": 304035.6475716065,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 304035.6475716065,
+      "analytical_tiles_per_s": 304035.6475716065,
+      "output_elements_per_s": 311332503.11332506,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 128,
+      "k": 32,
+      "threads": 1024,
+      "shared_bytes": 17408,
+      "register_bytes": 32768,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 143360,
+      "D_S": 1220608,
+      "D_R": 6578176,
+      "c_H": 697544.6428571428,
+      "c_S": 819263.8422818792,
+      "c_R": 304035.6475716065,
+      "c_P": 381469.7265625,
+      "flow_tiles_per_s": 304035.6475716065,
+      "analytical_tiles_per_s": 304035.6475716065,
+      "output_elements_per_s": 311332503.11332506,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 64,
+      "k": 1,
+      "threads": 512,
+      "shared_bytes": 288,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 75776,
+      "D_S": 614400,
+      "D_R": 3297280,
+      "c_H": 1319679.054054054,
+      "c_S": 1627604.1666666667,
+      "c_R": 606560.5590062112,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 606560.5590062112,
+      "analytical_tiles_per_s": 606560.5590062112,
+      "output_elements_per_s": 310559006.21118015,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 64,
+      "k": 8,
+      "threads": 512,
+      "shared_bytes": 2304,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 75776,
+      "D_S": 614400,
+      "D_R": 3297280,
+      "c_H": 1319679.054054054,
+      "c_S": 1627604.1666666667,
+      "c_R": 606560.5590062112,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 606560.5590062112,
+      "analytical_tiles_per_s": 606560.5590062112,
+      "output_elements_per_s": 310559006.21118015,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 64,
+      "k": 32,
+      "threads": 512,
+      "shared_bytes": 9216,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 75776,
+      "D_S": 614400,
+      "D_R": 3297280,
+      "c_H": 1319679.054054054,
+      "c_S": 1627604.1666666667,
+      "c_R": 606560.5590062112,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 606560.5590062112,
+      "analytical_tiles_per_s": 606560.5590062112,
+      "output_elements_per_s": 310559006.21118015,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 64,
+      "k": 128,
+      "threads": 512,
+      "shared_bytes": 36864,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 75776,
+      "D_S": 614400,
+      "D_R": 3297280,
+      "c_H": 1319679.054054054,
+      "c_S": 1627604.1666666667,
+      "c_R": 606560.5590062112,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 606560.5590062112,
+      "analytical_tiles_per_s": 606560.5590062112,
+      "output_elements_per_s": 310559006.21118015,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 32,
+      "k": 1,
+      "threads": 256,
+      "shared_bytes": 160,
+      "register_bytes": 8192,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 41984,
+      "D_S": 311296,
+      "D_R": 1656832,
+      "c_H": 2381859.7560975607,
+      "c_S": 3212376.6447368423,
+      "c_R": 1207122.9913473425,
+      "c_P": 1525878.90625,
+      "flow_tiles_per_s": 1207122.9913473425,
+      "analytical_tiles_per_s": 1207122.9913473425,
+      "output_elements_per_s": 309023485.7849197,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 32,
+      "k": 8,
+      "threads": 256,
+      "shared_bytes": 1280,
+      "register_bytes": 8192,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 41984,
+      "D_S": 311296,
+      "D_R": 1656832,
+      "c_H": 2381859.7560975607,
+      "c_S": 3212376.6447368423,
+      "c_R": 1207122.9913473425,
+      "c_P": 1525878.90625,
+      "flow_tiles_per_s": 1207122.9913473425,
+      "analytical_tiles_per_s": 1207122.9913473425,
+      "output_elements_per_s": 309023485.7849197,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 32,
+      "k": 32,
+      "threads": 256,
+      "shared_bytes": 5120,
+      "register_bytes": 8192,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 41984,
+      "D_S": 311296,
+      "D_R": 1656832,
+      "c_H": 2381859.7560975607,
+      "c_S": 3212376.6447368423,
+      "c_R": 1207122.9913473425,
+      "c_P": 1525878.90625,
+      "flow_tiles_per_s": 1207122.9913473425,
+      "analytical_tiles_per_s": 1207122.9913473425,
+      "output_elements_per_s": 309023485.7849197,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 32,
+      "k": 128,
+      "threads": 256,
+      "shared_bytes": 20480,
+      "register_bytes": 8192,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 41984,
+      "D_S": 311296,
+      "D_R": 1656832,
+      "c_H": 2381859.7560975607,
+      "c_S": 3212376.6447368423,
+      "c_R": 1207122.9913473425,
+      "c_P": 1525878.90625,
+      "flow_tiles_per_s": 1207122.9913473425,
+      "analytical_tiles_per_s": 1207122.9913473425,
+      "output_elements_per_s": 309023485.7849197,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 32,
+      "k": 256,
+      "threads": 256,
+      "shared_bytes": 40960,
+      "register_bytes": 8192,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 41984,
+      "D_S": 311296,
+      "D_R": 1656832,
+      "c_H": 2381859.7560975607,
+      "c_S": 3212376.6447368423,
+      "c_R": 1207122.9913473425,
+      "c_P": 1525878.90625,
+      "flow_tiles_per_s": 1207122.9913473425,
+      "analytical_tiles_per_s": 1207122.9913473425,
+      "output_elements_per_s": 309023485.7849197,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 128,
+      "k": 1,
+      "threads": 512,
+      "shared_bytes": 528,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 137216,
+      "D_S": 675840,
+      "D_R": 3420160,
+      "c_H": 728777.9850746269,
+      "c_S": 1479640.1515151516,
+      "c_R": 584767.9640718562,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 584767.9640718562,
+      "analytical_tiles_per_s": 584767.9640718562,
+      "output_elements_per_s": 299401197.6047904,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 128,
+      "k": 8,
+      "threads": 512,
+      "shared_bytes": 4224,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 137216,
+      "D_S": 675840,
+      "D_R": 3420160,
+      "c_H": 728777.9850746269,
+      "c_S": 1479640.1515151516,
+      "c_R": 584767.9640718562,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 584767.9640718562,
+      "analytical_tiles_per_s": 584767.9640718562,
+      "output_elements_per_s": 299401197.6047904,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 128,
+      "k": 32,
+      "threads": 512,
+      "shared_bytes": 16896,
+      "register_bytes": 16384,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 137216,
+      "D_S": 675840,
+      "D_R": 3420160,
+      "c_H": 728777.9850746269,
+      "c_S": 1479640.1515151516,
+      "c_R": 584767.9640718562,
+      "c_P": 762939.453125,
+      "flow_tiles_per_s": 584767.9640718562,
+      "analytical_tiles_per_s": 584767.9640718562,
+      "output_elements_per_s": 299401197.6047904,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 64,
+      "k": 1,
+      "threads": 256,
+      "shared_bytes": 272,
+      "register_bytes": 8192,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 70656,
+      "D_S": 339968,
+      "D_R": 1714176,
+      "c_H": 1415307.9710144927,
+      "c_S": 2941453.313253012,
+      "c_R": 1166741.3381123058,
+      "c_P": 1525878.90625,
+      "flow_tiles_per_s": 1166741.3381123058,
+      "analytical_tiles_per_s": 1166741.3381123058,
+      "output_elements_per_s": 298685782.5567503,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 64,
+      "k": 8,
+      "threads": 256,
+      "shared_bytes": 2176,
+      "register_bytes": 8192,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 70656,
+      "D_S": 339968,
+      "D_R": 1714176,
+      "c_H": 1415307.9710144927,
+      "c_S": 2941453.313253012,
+      "c_R": 1166741.3381123058,
+      "c_P": 1525878.90625,
+      "flow_tiles_per_s": 1166741.3381123058,
+      "analytical_tiles_per_s": 1166741.3381123058,
+      "output_elements_per_s": 298685782.5567503,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 64,
+      "k": 32,
+      "threads": 256,
+      "shared_bytes": 8704,
+      "register_bytes": 8192,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 70656,
+      "D_S": 339968,
+      "D_R": 1714176,
+      "c_H": 1415307.9710144927,
+      "c_S": 2941453.313253012,
+      "c_R": 1166741.3381123058,
+      "c_P": 1525878.90625,
+      "flow_tiles_per_s": 1166741.3381123058,
+      "analytical_tiles_per_s": 1166741.3381123058,
+      "output_elements_per_s": 298685782.5567503,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 64,
+      "k": 128,
+      "threads": 256,
+      "shared_bytes": 34816,
+      "register_bytes": 8192,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 70656,
+      "D_S": 339968,
+      "D_R": 1714176,
+      "c_H": 1415307.9710144927,
+      "c_S": 2941453.313253012,
+      "c_R": 1166741.3381123058,
+      "c_P": 1525878.90625,
+      "flow_tiles_per_s": 1166741.3381123058,
+      "analytical_tiles_per_s": 1166741.3381123058,
+      "output_elements_per_s": 298685782.5567503,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 32,
+      "k": 1,
+      "threads": 128,
+      "shared_bytes": 144,
+      "register_bytes": 4096,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 37376,
+      "D_S": 172032,
+      "D_R": 861184,
+      "c_H": 2675513.698630137,
+      "c_S": 5812872.023809524,
+      "c_R": 2322384.066587396,
+      "c_P": 3051757.8125,
+      "flow_tiles_per_s": 2322384.066587396,
+      "analytical_tiles_per_s": 2322384.066587396,
+      "output_elements_per_s": 297265160.5231867,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 32,
+      "k": 8,
+      "threads": 128,
+      "shared_bytes": 1152,
+      "register_bytes": 4096,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 37376,
+      "D_S": 172032,
+      "D_R": 861184,
+      "c_H": 2675513.698630137,
+      "c_S": 5812872.023809524,
+      "c_R": 2322384.066587396,
+      "c_P": 3051757.8125,
+      "flow_tiles_per_s": 2322384.066587396,
+      "analytical_tiles_per_s": 2322384.066587396,
+      "output_elements_per_s": 297265160.5231867,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 32,
+      "k": 32,
+      "threads": 128,
+      "shared_bytes": 4608,
+      "register_bytes": 4096,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 37376,
+      "D_S": 172032,
+      "D_R": 861184,
+      "c_H": 2675513.698630137,
+      "c_S": 5812872.023809524,
+      "c_R": 2322384.066587396,
+      "c_P": 3051757.8125,
+      "flow_tiles_per_s": 2322384.066587396,
+      "analytical_tiles_per_s": 2322384.066587396,
+      "output_elements_per_s": 297265160.5231867,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 32,
+      "k": 128,
+      "threads": 128,
+      "shared_bytes": 18432,
+      "register_bytes": 4096,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 37376,
+      "D_S": 172032,
+      "D_R": 861184,
+      "c_H": 2675513.698630137,
+      "c_S": 5812872.023809524,
+      "c_R": 2322384.066587396,
+      "c_P": 3051757.8125,
+      "flow_tiles_per_s": 2322384.066587396,
+      "analytical_tiles_per_s": 2322384.066587396,
+      "output_elements_per_s": 297265160.5231867,
+      "bottlenecks": [
+        "R"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 32,
+      "k": 256,
+      "threads": 128,
+      "shared_bytes": 36864,
+      "register_bytes": 4096,
+      "legal": true,
+      "rejection_reasons": [],
+      "D_H": 37376,
+      "D_S": 172032,
+      "D_R": 861184,
+      "c_H": 2675513.698630137,
+      "c_S": 5812872.023809524,
+      "c_R": 2322384.066587396,
+      "c_P": 3051757.8125,
+      "flow_tiles_per_s": 2322384.066587396,
+      "analytical_tiles_per_s": 2322384.066587396,
+      "output_elements_per_s": 297265160.5231867,
+      "bottlenecks": [
+        "R"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "m": 4,
+      "n": 64,
+      "k": 256,
+      "threads": 256,
+      "shared_bytes": 69632,
+      "register_bytes": 8192,
+      "legal": false,
+      "rejection_reasons": [
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 128,
+      "k": 128,
+      "threads": 512,
+      "shared_bytes": 67584,
+      "register_bytes": 16384,
+      "legal": false,
+      "rejection_reasons": [
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 4,
+      "n": 128,
+      "k": 256,
+      "threads": 512,
+      "shared_bytes": 135168,
+      "register_bytes": 16384,
+      "legal": false,
+      "rejection_reasons": [
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 64,
+      "k": 256,
+      "threads": 512,
+      "shared_bytes": 73728,
+      "register_bytes": 16384,
+      "legal": false,
+      "rejection_reasons": [
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 128,
+      "k": 128,
+      "threads": 1024,
+      "shared_bytes": 69632,
+      "register_bytes": 32768,
+      "legal": false,
+      "rejection_reasons": [
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 8,
+      "n": 128,
+      "k": 256,
+      "threads": 1024,
+      "shared_bytes": 139264,
+      "register_bytes": 32768,
+      "legal": false,
+      "rejection_reasons": [
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 64,
+      "k": 256,
+      "threads": 1024,
+      "shared_bytes": 81920,
+      "register_bytes": 32768,
+      "legal": false,
+      "rejection_reasons": [
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 128,
+      "k": 1,
+      "threads": 2048,
+      "shared_bytes": 576,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 128,
+      "k": 8,
+      "threads": 2048,
+      "shared_bytes": 4608,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 128,
+      "k": 32,
+      "threads": 2048,
+      "shared_bytes": 18432,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 128,
+      "k": 128,
+      "threads": 2048,
+      "shared_bytes": 73728,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 16,
+      "n": 128,
+      "k": 256,
+      "threads": 2048,
+      "shared_bytes": 147456,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 32,
+      "k": 256,
+      "threads": 1024,
+      "shared_bytes": 65536,
+      "register_bytes": 32768,
+      "legal": false,
+      "rejection_reasons": [
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 64,
+      "k": 1,
+      "threads": 2048,
+      "shared_bytes": 384,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 64,
+      "k": 8,
+      "threads": 2048,
+      "shared_bytes": 3072,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 64,
+      "k": 32,
+      "threads": 2048,
+      "shared_bytes": 12288,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 64,
+      "k": 128,
+      "threads": 2048,
+      "shared_bytes": 49152,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 64,
+      "k": 256,
+      "threads": 2048,
+      "shared_bytes": 98304,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 128,
+      "k": 1,
+      "threads": 4096,
+      "shared_bytes": 640,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 128,
+      "k": 8,
+      "threads": 4096,
+      "shared_bytes": 5120,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 128,
+      "k": 32,
+      "threads": 4096,
+      "shared_bytes": 20480,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 128,
+      "k": 128,
+      "threads": 4096,
+      "shared_bytes": 81920,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 32,
+      "n": 128,
+      "k": 256,
+      "threads": 4096,
+      "shared_bytes": 163840,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 32,
+      "k": 1,
+      "threads": 2048,
+      "shared_bytes": 384,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 32,
+      "k": 8,
+      "threads": 2048,
+      "shared_bytes": 3072,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 32,
+      "k": 32,
+      "threads": 2048,
+      "shared_bytes": 12288,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 32,
+      "k": 128,
+      "threads": 2048,
+      "shared_bytes": 49152,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 32,
+      "k": 256,
+      "threads": 2048,
+      "shared_bytes": 98304,
+      "register_bytes": 65536,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 64,
+      "k": 1,
+      "threads": 4096,
+      "shared_bytes": 512,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 64,
+      "k": 8,
+      "threads": 4096,
+      "shared_bytes": 4096,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 64,
+      "k": 32,
+      "threads": 4096,
+      "shared_bytes": 16384,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 64,
+      "k": 128,
+      "threads": 4096,
+      "shared_bytes": 65536,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 64,
+      "k": 256,
+      "threads": 4096,
+      "shared_bytes": 131072,
+      "register_bytes": 131072,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 128,
+      "k": 1,
+      "threads": 8192,
+      "shared_bytes": 768,
+      "register_bytes": 262144,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 128,
+      "k": 8,
+      "threads": 8192,
+      "shared_bytes": 6144,
+      "register_bytes": 262144,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 128,
+      "k": 32,
+      "threads": 8192,
+      "shared_bytes": 24576,
+      "register_bytes": 262144,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 128,
+      "k": 128,
+      "threads": 8192,
+      "shared_bytes": 98304,
+      "register_bytes": 262144,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S",
+        "register_bytes exceeds R"
+      ]
+    },
+    {
+      "m": 64,
+      "n": 128,
+      "k": 256,
+      "threads": 8192,
+      "shared_bytes": 196608,
+      "register_bytes": 262144,
+      "legal": false,
+      "rejection_reasons": [
+        "threads exceeds T",
+        "shared_bytes exceeds S",
+        "register_bytes exceeds R"
+      ]
+    }
+  ]
+}

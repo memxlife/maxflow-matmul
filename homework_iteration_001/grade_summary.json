@@ -1,0 +1,38 @@
+{
+  "eligible": true,
+  "experimental_score": 30518.52668559058,
+  "status": "candidate",
+  "mode": "grade",
+  "version": "challenge-report-v0.7",
+  "description": "Selected fields from unchanged local v0.7.3 full grade; not an online server grade.",
+  "cases": {
+    "M1_P1": {
+      "functional_passed": true,
+      "timing": {
+        "cycles": 773243,
+        "area_mm2": 23.62586371072,
+        "peak_window_power_w": 19.15030431718759,
+        "hbm_read_bytes": 69137728,
+        "hbm_write_bytes": 8120320
+      }
+    },
+    "M2_D1": {
+      "functional_passed": true,
+      "timing": {
+        "cycles": 56040,
+        "area_mm2": 23.62586371072,
+        "peak_window_power_w": 19.961665155590786,
+        "hbm_read_bytes": 2522624,
+        "hbm_write_bytes": 235776
+      }
+    }
+  },
+  "source_report_sha256": "d3f3c27892047008a3ce56329fde9eee535593bb561969e817e1ad5d4dc2226e",
+  "run": {
+    "elapsed_seconds": 1323.769846084062,
+    "peak_sampled_rss_bytes": 3084697600,
+    "inputs_unchanged": true,
+    "authority_unchanged": true,
+    "finished_utc": "2026-09-29T10:18:45.322505+00:00"
+  }
+}

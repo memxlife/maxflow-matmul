@@ -1,0 +1,17 @@
+# A bounded executable simulator study
+
+The question is whether tile reuse, larger staging chunks, and prefetching improve a verified scalar matrix multiplication after the ideal maximum-flow model has proposed a configuration.
+
+The workload is A with 8 rows and 32 columns multiplied by B with 32 rows and 64 columns. Every candidate produces the same 512 FP32 outputs with ascending reduction order. Hardware is the project's fixed sixteen-SM, eight-channel, no-cache configuration. The unmodified local v0.7.3 functional executor, race checker, and event scheduler are the authority for this standalone experiment. This does not establish course workload correctness or eligibility.
+
+The course instruction set represents groups of output scalars using vector instructions, not CUDA threads or warps. Each output retains one scalar accumulator; each row updates 32 columns together. An A scalar is broadcast by the vector instruction. HBM stages directly to shared memory, which differs from the published baseline's temporary-register accounting. These are explicit simulator adaptations. No tensor instructions or register output tiling are used.
+
+The initial configuration is m=1, n=32, k=1, one shared buffer. Candidate dimensions are m in {1,2,4}, n=32, and k in {1,4,16}. A finite mathematical search first ranks aggregate HBM service per output, with the original model's smallest-depth tie-break. A second model includes two transfer launches per chunk and selects the largest legal depth. This is a hypothesis about launch overhead, not a fitted cycle prediction. A third comparison adds a second shared buffer and issues the next chunk before computing the current one. Prefetch never overwrites live operands. Every proposal is recorded before evaluation; slower candidates remain in the evidence.
+
+Three deterministic random seeds, 7, 19, and 43, supply independent input matrices. The oracle performs scalar-order fused multiply-adds with an FP32 rounding at each step. Require bitwise equality, finite outputs, complete output coverage, input immutability, and no race-check failure. Only then record event-simulator cycles. The process is limited to four candidates, each with a 30-second deadline, and one local process.
+
+The objective is 16384 useful multiply-adds divided by simulated cycles. Higher is better. The performance curve admits a candidate only after all checks and timing finish. The horizontal axis measures elapsed wall time from clock.json, including contract writing, model work, code generation, checking, and evaluation. Earlier published-model and simulator discovery work precedes that clock; it is not reconstructed. Run receipts include program and authority hashes. A failed candidate cannot raise the best-verified curve.
+
+A separate bound is 16 SMs times 32 vector elements divided by three service cycles, or 170.67 multiply-adds per simulated cycle: the authority charges 2+ceil(32/32)=3 cycles for each 32-element vector operation. This ignores initialization, memory, register service, dependencies, and unused SMs. It is an optimistic instruction-service ceiling for this fixed scalar-vector family, not tensor peak throughput or a calibrated roofline. The plot must label it separately and show raw simulated throughput without inventing hardware percentages.
+
+All new evidence stays in this folder. The original published design and results remain unchanged. No GPU timings, remote access, course submission, or Git push are part of this run.
